@@ -5,7 +5,9 @@ export default {
         "./login/**/*.{html,js,php}",
         "./index.php",
         "./master/**/*.{html,js,php}",
-        "./register/**/*.{html,js,php}"
+        "./register/**/*.{html,js,php}",
+        "./product.php",
+        "config.php"
     ],
 
     theme: {

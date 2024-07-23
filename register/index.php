@@ -12,7 +12,7 @@ include '../master/header.php'
     <title>shop</title>
 </head>
 <body id="back">
-<div class="container mx-auto text-2xl" id="login">
+<div class="card mx-auto text-2xl" id="login">
     <form action="" method="POST">
         <div class="register flex flex-col items-center">
         <label for="name"> Name:</label>

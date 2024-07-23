@@ -31,3 +31,6 @@ nav{
 .register{
 
 }
+nav{
+   position: sticky;
+}

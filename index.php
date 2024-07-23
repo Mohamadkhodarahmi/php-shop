@@ -12,6 +12,21 @@ include 'master/header.php'
     <title>Document</title>
 </head>
 <body>
+<div class="bg-gray-900 py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-white mb-8">shop Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <?php
+                include "config.php";
+
+                include "product.php"
+            ?>
+
+
+
+</div>
+    </div>
+</div>
 
 </body>
 </html>
