@@ -17,6 +17,11 @@ if ($connection->connect_error) {
 $sql = "SELECT * FROM products LEFT JOIN XX_SAMPLE ON products.productname = XX_SAMPLE.name";
 $result = $connection->query($sql);
 
+$users = "SELECT * FROM users ";
+$userResult =$connection->query($users);
+
+
+
 
 
 

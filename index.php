@@ -1,7 +1,11 @@
 <?php
+
+
 include 'master/header.php'
 ?>
-<!doctype html>
+
+
+    <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,3 +34,5 @@ include 'master/header.php'
 
 </body>
 </html>
+
+

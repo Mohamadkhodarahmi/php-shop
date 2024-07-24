@@ -1,5 +1,8 @@
 <?php
-include '../master/header.php'
+include '../master/header.php';
+include '../config.php';
+
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -12,16 +15,39 @@ include '../master/header.php'
     <title>shop</title>
 </head>
 <body id="back">
-<div class="container mx-auto text-2xl" id="login">
-    <div class="login  flex flex-col items-center">
-        <form action="" method="POST" >
-            <label for="name" > Name:</label>
-            <input class="my-2 py-2" type="text" name="name" placeholder=" Enter your name" ><br>
+<div class="font-sans text-gray-950 antialiased flex flex-col items-center" id="login">
+    <div class="w-full sm:max-w-lg mt-6 px-6 py-4 bg-white shadow-2xl overflow-hidden sm:rounded-lg ">
+        <div class="py-8">
+            <center>
+                <span class="text-2xl font-semibold">Log In</span>
+            </center>
+        </div>
+        <?php
 
-            <label for="email">  E-mail:</label>
-            <input type="text" name="email" placeholder=" Enter your email" class="py-2"><br>
-            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" id="loginbutton">login</a>
-            <a class="btn mt-2  " href="../register">register</a>
+        if (isset($_COOKIE['wrong'])):
+
+            ?>
+            <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+                <?= $_COOKIE['wrong'] ?>
+            </div>
+        <?php
+
+
+        endif;
+        ?>
+        <form action="../login/account.php" method="POST" >
+            <div class="block font-medium text-md text-gray-700">
+                <label for="email" class="block font-medium text-lg text-gray-700">  E-mail:</label>
+                <input type="text" name="email" placeholder=" Enter your email" class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#f84525]"><br>
+
+                <label for="name" class="block font-medium text-lg text-gray-700"> password:</label>
+                <input class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#f84525]" type="text" name="password" placeholder=" Enter your password" ><br>
+
+
+                <button type="submit" class="mt-2 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent " id="loginbutton">login</button>
+                <a class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" href="../register">register</a>
+            </div>
+
         </form>
     </div>
 </div>
