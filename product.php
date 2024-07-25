@@ -1,7 +1,7 @@
 <?php
 include "config.php";
 
-    foreach ($result->fetch_all(1) as $row):{
+    foreach ($result->fetch_all(1) as $row):
 
 ?>
 <!doctype html>
@@ -25,17 +25,17 @@ include "config.php";
         </div>
     </div>
     <h3 class="text-xl font-bold text-gray-900 mt-4"><?=$row["productname"]?></h3>
-    <p class="text-gray-500 text-sm mt-2"><?=$row["descpription"]?></p>
+    <p class="text-gray-500 text-sm mt-2"><?=$row["description"]?></p>
     <div class="flex items-center justify-between mt-4">
         <span class="text-gray-900 font-bold text-lg">$<?=$row["price"]?> USD</span>
-        <button class="bg-gray-900 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800">Add to Cart</button>
+        <button class="bg-gray-900 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800" id="addtocart" onclick="cart()"  >Add to Cart</button>
     </div>
 </div>
-
+<script src="cart.js" type="module"></script>
 </body>
 </html>
 <?php
-        }
+
 
 
 endforeach;

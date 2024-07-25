@@ -18,6 +18,7 @@ while ($user = $userResult->fetch_assoc()) {
         }
     }
     else{
+        setcookie('wrongemail', 'wrong pass or email',time() + 3,'/');
         header("Location:./");
     }
 }

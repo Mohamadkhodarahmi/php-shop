@@ -2,10 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn:hover{
-background-color: #887fda;
-border-radius: 4px;
-}
+
 body{
     background-image: linear-gradient(to right, #9f660f, yellow ,powderblue);
 }

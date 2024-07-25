@@ -7,7 +7,8 @@ export default {
         "./master/**/*.{html,js,php}",
         "./register/**/*.{html,js,php}",
         "./product.php",
-        "config.php"
+        "config.php",
+        "./logout/**/*.{html,js,php}"
     ],
 
     theme: {

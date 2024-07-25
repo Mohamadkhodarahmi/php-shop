@@ -28,8 +28,11 @@ include '../master/header.php'
                 <label for="pass" class="block font-medium text-lg text-gray-700">password:</label>
                 <input type="number" name="pass" placeholder=" Enter your password" class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#f84525]"><br>
 
-                <button  class="mt-2 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent text-2xl" id="loginbutton">sing up</button>
-                <button class="mt-2 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent " onclick="location.href='../login'" type="button">back to login</button>
+                <div class="ms-3">
+                    <button class="mt-2 bg-transparent hover:bg-blue-300 text-blue-700 font-medium hover:text-white py-1 px-1 border border-blue-500 hover:border-transparent shadow-inner rounded " onclick="location.href='../login'" type="button">back to login</button>
+                    <button  class="bg-transparent hover:bg-blue-500 text-blue-700 font-medium hover:text-white py-1 px-2 border border-blue-500 hover:border-transparent rounded" id="loginbutton">sing up</button>
+                </div>
+
             </div>
 
         </form>
