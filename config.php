@@ -17,7 +17,7 @@ if ($connection->connect_error) {
 $sql = "SELECT * FROM products LEFT JOIN image ON products.productname = image.name";
 $result = $connection->query($sql);
 
-$users = "SELECT * FROM users ";
+$users = "SELECT * FROM users  ";
 $userResult =$connection->query($users);
 
 
